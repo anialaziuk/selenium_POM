@@ -1,10 +1,13 @@
 from tests.base_test import BaseTest
+from time import sleep
 
 
 class RegistrationTest(BaseTest):
-    def setup(self):
+    def setUp(self):
         super().setUp()
-        self.home_page.click_sign_in()
+        self.authentication_page = self.home_page.click_sign_in()
+        self.authentication_page.enter_create_account_email("ania@mail.com")
+
 
     def testNoSurname(self):
-        pass
+        sleep(3)
