@@ -1,11 +1,10 @@
 from pages.base_page import BasePage
-from selenium.webdriver.common.by import By
 from pages.authentication_page import AuthenticationPage
-
+from selenium.webdriver.common.by import By
 
 class Locators:
     """
-    Home PAge elements locators
+    Home Page elements locators
     """
     SIGN_IN_LINK = (By.CLASS_NAME, "login")
 
